@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h2>Task Board</h2>
+        <button class="btn " id="add-task">Add Task</button>
+      </nav>
+      <section class="board">
+        <div id="todo" class="task-col">
+          <div class="heading">
+            <h2>To Do</h2>
+            <p class="count">Count</p>
+          </div>
+          <!-- <div draggable="true" class="task">
+            <h4>Task 1</h4>
+            <p>description for task 1</p>
+            <button class="btn delete">Delete</button>
+          </div> -->
+        </div>
+        <div id="progress" class="task-col">
+          <div class="heading">
+            <h2>In Progress</h2>
+            <p class="count">Count</p>
+          </div>
+        </div>
+        <div id="done" class="task-col">
+          <div class="heading">
+            <h2>Completed</h2>
+            <p class="count">Count</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal add-task">
+      <div class="bg"></div>
+      <div class="center">
+        <div class="center-top">
+        <h2>Create Task</h2>
+        <button class=" cancel">&times</button>
+        </div>
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <textarea
+          type="text"
+          name="desc"
+          id="desc"
+          placeholder="Description"
+        ></textarea>
+        <button class="btn" id="create">Task</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
